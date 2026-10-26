@@ -27,7 +27,7 @@
     <main>
       <a class="wordmark" href="/" aria-label="CallBye — início">Call<span>Bye</span></a>
       <h1>Política de privacidade</h1>
-      <p class="updated">Atualizada em 22 de outubro de 2026. Aplicativo Android: <code>com.henrymob.callbye</code>.</p>
+      <p class="updated">Atualizada em 26 de outubro de 2026. Aplicativo Android: <code>com.henrymob.callbye</code>.</p>
       <p>Esta página explica como o CallBye usa dados para filtrar chamadas, exibir anúncios, gerenciar assinaturas e receber denúncias voluntárias. Para dúvidas ou solicitações sobre seus dados, escreva para <a href="mailto:henrymoboficial@gmail.com">henrymoboficial@gmail.com</a>.</p>
 
       <h2>Filtragem e dados no aparelho</h2>
@@ -36,11 +36,15 @@
 
       <h2>Denúncias voluntárias de spam ou cobrança</h2>
       <p>Ao escolher uma categoria e confirmar uma denúncia no histórico, o app envia para <code>api.callbye.online</code>, por HTTPS, o número completo em formato internacional, a categoria (spam ou cobrança) e um identificador da denúncia. Sem essa ação e confirmação, o recurso não envia o número. O serviço de denúncias é opcional e pode não estar disponível em todas as versões do app.</p>
-      <p>O servidor transforma o número recebido em um identificador criptográfico com chave secreta e guarda somente esse identificador, uma versão mascarada do número, a categoria, o ID da denúncia e o horário. O número completo não é gravado no banco de denúncias. Os registros são eliminados após 180 dias. O endereço IP é necessário para estabelecer a conexão e para limitar abusos em memória; o aplicativo não o inclui como campo da denúncia. A infraestrutura de rede pode processar dados técnicos necessários para entregar a requisição.</p>
+      <p>Em uma denúncia comum, o servidor transforma o número recebido em um identificador criptográfico com chave secreta e guarda esse identificador, uma versão mascarada do número, a categoria, o ID da denúncia e o horário. O número completo não é gravado no banco de denúncias. Os registros são eliminados após 180 dias. O endereço IP é necessário para estabelecer a conexão e para limitar abusos em memória; o aplicativo não o inclui como campo da denúncia. A infraestrutura de rede pode processar dados técnicos necessários para entregar a requisição.</p>
       <p>As denúncias servem para análise agregada e moderação futura. Elas não bloqueiam automaticamente um número nem comprovam que uma chamada seja indevida; cobranças podem ser legítimas.</p>
 
+      <h2>Radar CallBye (compartilhamento opcional)</h2>
+      <p>Ao denunciar uma chamada, você pode marcar separadamente “Compartilhar com o Radar CallBye”. Essa opção começa desmarcada e exige entrar com Google. O servidor verifica a conta, conserva apenas um identificador pseudônimo protegido por chave e cria uma impressão digital SHA-256 do número para a contribuição. Não grava o número completo no banco. Uma mesma conta contribui no máximo uma vez por número. Contribuições antigas sem essa escolha não entram no Radar.</p>
+      <p>Depois de revisão administrativa e relatos de pelo menos três contas distintas na mesma categoria, a impressão digital, a categoria e a contagem podem ser distribuídas a outros aparelhos para comparação local. Impressões digitais de números de telefone podem ser testadas contra números conhecidos; portanto, não garantem anonimato. O Radar exibe apenas um aviso de possível spam ou cobrança no histórico, sujeito a erro. Ele não decide nem bloqueia chamadas. As contribuições expiram após 180 dias; o aparelho descarta listas vencidas em até sete dias. Para contestar uma classificação ou pedir exclusão, use o e-mail de suporte abaixo.</p>
+
       <h2>Indicações (quando disponíveis)</h2>
-      <p>Para participar das indicações, você entra com sua Conta Google. O app envia ao serviço do CallBye um token de autenticação Google para verificar sua identidade; o servidor usa o identificador da conta apenas como base de um identificador pseudônimo protegido por chave. Armazena o código de convite, créditos e prazo de proteção, além da relação entre quem indicou e quem foi indicado para impedir créditos duplicados. Não usa seus contatos para encontrar convidados.</p>
+      <p>Para participar das indicações, você entra com sua Conta Google. O mesmo login pode ser usado se você escolher compartilhar uma denúncia com o Radar. O app envia ao serviço do CallBye um token de autenticação Google para verificar sua identidade; o servidor usa o identificador da conta apenas como base de um identificador pseudônimo protegido por chave. Armazena o código de convite, créditos e prazo de proteção, além da relação entre quem indicou e quem foi indicado para impedir créditos duplicados. Não usa seus contatos para encontrar convidados.</p>
       <p>Se você instalar o app por um link de indicação e optar por entrar, o CallBye consulta a atribuição de instalação do Google Play e verifica a integridade do app antes de conceder o benefício. O benefício é proteção gratuita com anúncios, limitada a 90 dias por conta; não equivale à assinatura PRO. Você pode excluir a conta de indicações no app ou solicitar exclusão por e-mail. Após a exclusão, um identificador pseudônimo pode ser conservado por até 180 dias para impedir abuso e depois é removido.</p>
 
       <h2>Publicidade e assinatura</h2>
